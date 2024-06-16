@@ -10,6 +10,8 @@ import FooterComp from './components/Footer'
  
  export default function App() {
    return (
+    // <div className="bg-blue-300">
+    // <div className="bg-hcorp1">
       <BrowserRouter>
       <Header /> 
        <Routes>
@@ -19,13 +21,11 @@ import FooterComp from './components/Footer'
         <Route path="/sign-in" element ={<SignIn />}/>
         <Route path="/sign-up" element={<SignUp />}/> 
         <Route path="/projects" element={<Projects />}/>
-         
-
-
        </Routes>
        <FooterComp /> 
       
       </BrowserRouter>
+      // </div>
    )
  }
  

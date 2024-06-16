@@ -5,7 +5,8 @@ import {BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble} from 'react-ic
 
 export default function FooterComp() {
   return (
-    <Footer container className="border border-t-8 border-blue-500">
+   <Footer container className="border border-t-8 border-blue-500">
+    {/* <Footer container className="bg-hcorp1 border border-t-8 border-blue-500"> */}
         <div className="w-full max-w-7xl mx-auto">
             <div className="grid w-full justify-between sm:flex md:grid-cols-1">
                 <div className="mt-5">
@@ -75,7 +76,7 @@ export default function FooterComp() {
                     </div>
                 </div>
             </div>
-            <Footer.Divider /> 
+            <Footer.Divider/> 
             <div className="w-full sm:flex sm:items-center sm:justify-between">
                 <Footer.Copyright href="#" 
                  by="Sofware Engineering Facility" 

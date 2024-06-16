@@ -19,14 +19,14 @@ export default function OAuth() {
             const resultsFromGoogle = await signInWithPopup(auth, provider)
             console.log(resultsFromGoogle); 
             // now we have to send the information got from consologging resultsFromGoogle to the backend
-            const res = await fetch('api/auth/google', {
+            const res = await fetch('/api/auth/google', {
                 method:'POST', 
                 headers:{'Content-Type' : 'application/json' }, 
-                body: JSON.stringify({
-                    name: resultsFromGoogle.user.displayName, 
+                body:JSON.stringify({
+                    name:resultsFromGoogle.user.displayName, 
                     email:resultsFromGoogle.user.email, 
-                    googlePhotoURL: resultsFromGoogle.user.photoURL, 
-                })
+                    googlePhotoUrl:resultsFromGoogle.user.photoURL, 
+                }),
             })
             // convert data into json:
             const data = await res.json(); 

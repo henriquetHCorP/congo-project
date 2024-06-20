@@ -11,3 +11,11 @@
     /* global 94%+ browsers support */
     background: linear-gradient(90deg, rgba(33, 150, 243, 1) 0%, rgba(1, 6, 33, 1) 57%);
 }
+
+body {
+    height: 100vh; 
+}
+
+.ql-editor{
+    font-size: 1.05rem; 
+}

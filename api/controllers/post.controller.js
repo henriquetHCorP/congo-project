@@ -36,7 +36,7 @@ export const create = async(req, res, next) => {
             // if the query include category, search for the category 
             ...(req.query.category && {category: req.query.category}), 
             //if the query include slug, search for the slug
-            ...(req.query.slug && {category: req.query.slug}), 
+            ...(req.query.slug && {slug: req.query.slug}), 
             // if the query include postId , search for _id because posts are saved inside mongodb under _id(s)
             ...(req.query.postId && {_id: req.query.postId}),
             ...(req.query.searchTerm && {

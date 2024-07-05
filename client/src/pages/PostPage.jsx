@@ -2,6 +2,7 @@ import { Button, Spinner } from 'flowbite-react';
 import React, { useEffect, useState } from 'react'; 
 import { Link, useParams } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
+import CommentSection from '../components/CommentSection';
 
 export default function PostPage() {
   const { postSlug } = useParams(); 
@@ -61,6 +62,9 @@ export default function PostPage() {
           <div className="max-w-4xl mx-auto w-full"> 
                <CallToAction /> 
           </div>
+          {/*in the comment section we need to save the postId to keep track of the comment */}
+               <CommentSection postId={post._id}/> 
+
     </main>
   )
 }
